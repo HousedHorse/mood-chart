@@ -7,17 +7,26 @@ LegendItem::LegendItem(QWidget *parent, QColor color, QString label) :
 {
     ui->setupUi(this);
 
-    // set color
-    QPalette pal = palette();
-    pal.setColor(QPalette::Background, color);
-    ui->frame->setAutoFillBackground(true);
-    ui->frame->setPalette(pal);
-
-    // set label
-    ui->label->setText(label);
+    setColor(color);
+    setLabel(label);
 }
 
 LegendItem::~LegendItem()
 {
     delete ui;
+}
+
+void LegendItem::setColor(QColor color)
+{
+    // set color
+    QPalette pal = palette();
+    pal.setColor(QPalette::Background, color);
+    ui->frame->setAutoFillBackground(true);
+    ui->frame->setPalette(pal);
+}
+
+void LegendItem::setLabel(QString label)
+{
+    // set label
+    ui->label->setText(label);
 }

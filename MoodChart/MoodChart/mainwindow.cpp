@@ -12,6 +12,19 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->table->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContents);
     adjustSize();
+
+    ui->happy->setColor(Qt::yellow);
+    ui->happy->setLabel("Happy");
+    ui->sad->setColor(Qt::blue);
+    ui->sad->setLabel("Sad");
+    ui->angry->setColor(Qt::red);
+    ui->angry->setLabel("Angry");
+    ui->depressed->setColor(Qt::gray);
+    ui->depressed->setLabel("Depressed");
+    ui->tired->setColor(Qt::green);
+    ui->tired->setLabel("Tired/Sick");
+    ui->anxious->setColor(Qt::magenta);
+    ui->anxious->setLabel("Tired/Sick");
 }
 
 MainWindow::~MainWindow()

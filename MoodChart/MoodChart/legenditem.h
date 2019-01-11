@@ -14,11 +14,11 @@ class LegendItem : public QWidget
 public:
     explicit LegendItem(QWidget *parent = nullptr, QColor color = Qt::white, QString label = "Null");
     ~LegendItem();
+    void setColor(QColor color);
+    void setLabel(QString label);
 
 private:
     Ui::LegendItem *ui;
-    //QColor color;
-    //QString label;
 };
 
 #endif // LEGENDITEM_H

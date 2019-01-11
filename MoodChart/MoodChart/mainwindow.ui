@@ -27,7 +27,7 @@
        <bool>true</bool>
       </attribute>
       <attribute name="horizontalHeaderDefaultSectionSize">
-       <number>30</number>
+       <number>43</number>
       </attribute>
       <attribute name="horizontalHeaderMinimumSectionSize">
        <number>30</number>
@@ -253,7 +253,7 @@
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="QFrame" name="frame">
+     <widget class="QFrame" name="legend">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
         <horstretch>0</horstretch>
@@ -267,40 +267,47 @@
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="3" column="0">
-        <widget class="LegendItem" name="label3" native="true"/>
-       </item>
-       <item row="1" column="0">
-        <widget class="LegendItem" name="label1" native="true"/>
-       </item>
-       <item row="2" column="0">
-        <widget class="LegendItem" name="label2" native="true"/>
-       </item>
-       <item row="4" column="0">
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
        <item row="0" column="0">
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Legend</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="LegendItem" name="happy" native="true"/>
+         </item>
+         <item>
+          <widget class="LegendItem" name="angry" native="true"/>
+         </item>
+         <item>
+          <widget class="LegendItem" name="depressed" native="true"/>
+         </item>
+         <item>
+          <widget class="LegendItem" name="anxious" native="true"/>
+         </item>
+         <item>
+          <widget class="LegendItem" name="tired" native="true"/>
+         </item>
+         <item>
+          <widget class="LegendItem" name="sad" native="true"/>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
        </item>
       </layout>
      </widget>
@@ -313,7 +320,7 @@
      <x>0</x>
      <y>0</y>
      <width>1286</width>
-     <height>20</height>
+     <height>29</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
